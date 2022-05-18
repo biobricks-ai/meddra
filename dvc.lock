@@ -1,0 +1,17 @@
+schema: '2.0'
+stages:
+  make_parquets:
+    cmd: Rscript R/build.R
+    deps:
+    - path: R/build.R
+      md5: 18ca255cac25f85342e360b1fc1824c6
+      size: 5089
+    - path: cache/MedDRA_25_0_English
+      md5: 05664dcf3431aff3e86ad92f35a6944c.dir
+      size: 37544714
+      nfiles: 32
+    outs:
+    - path: data/
+      md5: 889df252bfeef4b4686b057a7aa0dfd4.dir
+      size: 6520407
+      nfiles: 22

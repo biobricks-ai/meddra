@@ -1,0 +1,8 @@
+stages:
+  make_parquets:
+    cmd: Rscript R/build.R
+    deps:
+    - R/build.R
+    - cache/MedDRA_25_0_English
+    outs:
+    - data/

@@ -6,6 +6,7 @@ dependencies:
   - name: MedDRA
     url: https://www.meddra.org/
 ---
+<a href="https://github.com/biobricks-ai/meddra/actions"><img src="https://github.com/biobricks-ai/meddra/actions/workflows/bricktools-check.yaml/badge.svg?branch=main"/></a>
 
 > In the late 1990s, the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) developed MedDRA, a rich and highly specific standardised medical terminology to facilitate sharing of regulatory information internationally for medical products used by humans. ICH’s powerful tool, MedDRA is available to all for use in the registration, documentation and safety monitoring of medical products both before and after a product has been authorised for sale. Products covered by the scope of MedDRA include pharmaceuticals, biologics, vaccines and drug-device combination products. Today, its growing use worldwide by regulatory authorities, pharmaceutical companies, clinical research organisations and health care professionals allows better global protection of patient health.
 

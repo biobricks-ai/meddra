@@ -1,0 +1,35 @@
+{
+  "@context": "../../context/source.context.jsonld",
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/meddra",
+  "dcterms:title": "MedDRA - Medical Dictionary for Regulatory Activities (v25.0 English)",
+  "dcterms:description": "Parquet conversion of the MedDRA v25.0 English distribution: a standardised medical terminology (LLT/PT/HLT/HLGT/SOC hierarchy, history, and release files) used to code regulatory information for human medical products. MedDRA is a proprietary terminology owned by ICH and distributed by the MSSO under a paid, category-based subscription; the source files can only be downloaded and unzipped with MSSO-issued credentials and passwords.",
+  "dcterms:license": "proprietary",
+  "biobricks:licenseName": "MedDRA MSSO proprietary subscription licence (ICH-owned; see https://www.meddra.org/subscription)",
+  "biobricks:licenseClass": "restricted",
+  "biobricks:merckCommercialUse": "prohibited",
+  "biobricks:licenseEvidence": [
+    {
+      "source": "R/download.R",
+      "quote": "# The Meddra v25 files were manually downloaded from: https://www.meddra.org/software-packages  # A valid username and password are required to download the files.  # An unzip password provided by MedDRA is required to unzip the password.",
+      "confidence": "high"
+    },
+    {
+      "source": "https://en.wikipedia.org/wiki/MedDRA",
+      "quote": "MedDRA is available free for all regulators worldwide, academics, health care providers, and non-profit organizations. ... The subscription price is based according to company revenue for the industry. ... ICH holds the intellectual property rights (ownership) of MedDRA.",
+      "confidence": "high"
+    }
+  ],
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "Determined by BioBricks licensing-annotation agent (Claude). MedDRA is a proprietary, ICH-owned terminology distributed only via MSSO subscription; the brick's own download.R confirms a username/password and an unzip password issued by MedDRA are required to obtain the files. Commercial organisations must hold a paid Commercial subscription and redistribution is controlled by the MSSO, so class restricted / commercial use prohibited absent a MedDRA licence. A commercial licensee (e.g. Merck) may already hold its own MedDRA subscription, but that does NOT grant BioBricks/Toxindex a right to redistribute the MedDRA content; this brick must not be shipped without an MSSO redistribution/licensing arrangement. Human/legal review required before any distribution.",
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "dcat:Dataset",
+      "@id": "https://www.meddra.org/software-packages",
+      "dcterms:title": "MedDRA v25.0 English distribution (ASCII package)",
+      "dcterms:license": "proprietary",
+      "dcterms:publisher": "MedDRA MSSO / ICH",
+      "dcat:landingPage": "https://www.meddra.org/software-packages"
+    }
+  ]
+}
